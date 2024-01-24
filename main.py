@@ -28,7 +28,7 @@ async def command_start_handler(message: Message) -> None:
     Args:
         message: received message (in order to get the user's name)
     """
-    await message.answer(f"שלום, {hbold(message.from_user.full_name)}!")
+    await message.answer(f"שלום, {hbold(message.from_user.full_name)}!x")
 
 
 @dp.message()
