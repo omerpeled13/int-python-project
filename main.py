@@ -41,6 +41,7 @@ async def echo_handler(message: types.Message) -> None:
     """
     try:
         # Send a copy of the received message
+        print (message.chat.id)
         await message.send_copy(chat_id=message.chat.id)
     except TypeError:
         # handle wrong type error
